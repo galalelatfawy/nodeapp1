@@ -1,7 +1,8 @@
 FROM node
 LABEL maintainer="galal.elatfawy@gmail.com"
-COPY . /src
-WORKDIR /src
+WORKDIR ./src
+COPY package.json .
 RUN npm install
-EXPOSE 8001
+COPY . /src
+EXPOSE 5000
 ENTRYPOINT [ "node","./app.js" ]
