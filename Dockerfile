@@ -1,5 +1,5 @@
 FROM node
-MAINTAINER "galal.elatfawy@gmail.com"
+LABEL maintainer="value" "galal.elatfawy@gmail.com"
 COPY . /src
 WORKDIR /src
 RUN npm install
