@@ -1,6 +1,6 @@
 FROM node
 LABEL maintainer="galal.elatfawy@gmail.com"
-WORKDIR ./src
+WORKDIR /src
 COPY package.json .
 RUN npm install
 COPY . /src
